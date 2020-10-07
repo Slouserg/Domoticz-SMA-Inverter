@@ -1,36 +1,27 @@
-# SMA Inverters ModbusTCPIP
-Author: doki
+# Domoticz plugin for SMA Inverters using Modbus TCP/IP
 
-**SMA Sunny Tripower is supported,**
 
-Sunny Boy not yet
+## Tested on
+- Sunny TriPower [(thanks to doopa75)](https://github.com/doopa75/SMA-Inverter-ModbusTCPIP)
+- Sunny Boy 3.6
 
-**Requirements:**
+## Requirements
+- Modbus TCP enabled ([check this](https://www.sma-sunny.com/en/how-to-test-the-connection-to-your-sma-inverter/))
 
-SMA Sunny Tripower:
-* Modbus server TCP enabled,
-* Modbus server UDP enabled.
+> My installer used the following default password for the 'installer' account: `postalCode_zf` (for example `1234AB_zf`)
 
-https://www.sma-sunny.com/en/how-to-test-the-connection-to-your-sma-inverter/
-
-**Installation:**
-
+## Installation
+```bash
 cd ~/domoticz/plugins
+git clone https://github.com/Want100Cookies/Domoticz-SMA-Inverter.git
+cd Domoticz-SMA-Inverter
+pip3 install -U pymodbus pymodbusTCP
+systemctl restart domoticz
+```
 
-git clone https://github.com/doopa75/SMA-Inverter-ModbusTCPIP
+Succesfully Tested on Domoticz version: 2020.2 (build 12453)
 
-Then restart domoticz with: ```sudo service domoticz.sh restart```
+## Thanks
 
-Succesfully Tested on Domoticz version: 4.10717 (Stable)
-
-**Dependencies**
-
-For this plugin to work you need to install some dependencies
-
-pymodbus AND pymodbusTCP
-
-Install for python 3.x with: ```sudo pip3 install -U pymodbus pymodbusTCP```
-
-**Thanks**
-
+Original author: doki
 Inspired by MFxMF
