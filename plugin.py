@@ -1,7 +1,9 @@
 #!/usr/bin/env python
 """
 SMA Solar Inverter
-Author: Want100Cookies
+Author: Stefan Lousberg
+Forked from: Want100Cookies
+
 Requirements:
     1. SMA Sunny Tripower or Sunny Boy with Modbus TCP enabled.
     2. python 3.x
