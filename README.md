@@ -13,7 +13,7 @@
 ## Installation
 ```bash
 cd ~/domoticz/plugins
-git clone https://github.com/Want100Cookies/Domoticz-SMA-Inverter.git
+git clone https://github.com/Slouserg/Domoticz-SMA-Inverter.git
 cd Domoticz-SMA-Inverter
 pip3 install -U pymodbus pymodbusTCP
 systemctl restart domoticz
